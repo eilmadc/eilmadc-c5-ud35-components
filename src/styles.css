@@ -4,13 +4,17 @@
   color: #2DC998;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,  h3, h4, h5, h6{
   color: #2DC998;
 }
 
-button{
-  color: #2DC998;
+.button_1{
+  color: #2DC998 !important;
+  outline: auto;
+  outline-color: #2DC998;
+
 }
+
 
 th{
   font-size: 12px;
@@ -25,3 +29,4 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
   ;
 }
+

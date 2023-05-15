@@ -1,0 +1,57 @@
+<!------------- Formulario de Contacto ------------------>
+<div class="d-flex flex-column m-3 col col-6 justify-content-center align-items-center">
+  <form class="d-flex flex-column m-3 col col-6 justify-content-center align-items-left ">
+    <h3 class="mb-3 border-bottom">Formulario de Contacto</h3>
+    <!-- Nombre -->
+    <div class="row g-3 mb-3 align-items-center">
+      <div class="col-auto col-sm-2">
+        <label for="inputName" class="col-form-label badge text-dark me-3 ">Nombre </label>
+      </div>
+      <div class="col-auto">
+        <input type="text" id="inputName" class="form-control" placeholder="Nombre y apellido" #contactName>
+        <div class="invalid-feedback">
+          Introduzca su nombre y apellido
+        </div>
+      </div>
+
+    </div>
+
+    <!--       Email -->
+    <div class="row g-3 mb-3 align-items-center">
+      <div class="col-auto col-sm-2">
+        <label for="inputEmail" class="col-form-label badge text-dark ">Email </label>
+      </div>
+      <div class="col-auto ">
+        <input type="email" id="inputEmail" class="form-control" placeholder="ejemplo@dominio.com" #contactEmail>
+      </div>
+    </div>
+    <!--       Mensaje  -->
+    <div class="row g-2 mb-3 align-items-center">
+      <div class="col-auto col-sm-2">
+        <label for="textareaMensaje" class="col-form-label badge text-dark">Mensaje </label>
+      </div>
+      <div class="col-auto">
+        <textarea class="form-control" id="textareaMensaje" placeholder="Leave a comment here" id="floatingTextarea2"
+          style="height: 100px;width:210px;" #contactMensaje></textarea>
+      </div>
+    </div>
+
+    <!--       Problema y campo para rspuesta y validación -->
+    <div class="row g-3 mb-3 align-items-center">
+      <div class="col-auto col-sm-2">
+        <label for="inputProblema" class="col-form-label badge text-dark">2 + 3 = ? </label>
+      </div>
+      <div class="col-auto">
+        <input type="number" id="inputProblema" class="form-control" placeholder="Respuesta" #contactProblema>
+      </div>
+    </div>
+
+    <!--       Enviar Formulario -->
+    <div class="row g-3 mb-3 align-items-center">
+      <div class="col-auto col-sm-2">
+        <a type="button" class="btn btn-lg button_1"
+          (click)="contact(contactName.value, contactEmail.value, contactMensaje.value, contactProblema.valueAsNumber)">Guardar</a>
+      </div>
+    </div>
+
+  </form>

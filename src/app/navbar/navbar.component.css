@@ -1,3 +1,14 @@
 button{
   color: #2DC998;
 }
+
+
+.nav-tabs .nav-link.active {
+ color: #2DC998;
+  ;
+}
+
+.nav-tabs .nav-link.active.focus{
+  color: #2DC998;
+   ;
+ }

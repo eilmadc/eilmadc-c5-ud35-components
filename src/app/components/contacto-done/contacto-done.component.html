@@ -1,0 +1,38 @@
+<!------------- Formulario de Contacto ------------------>
+<div class="d-flex flex-column m-3 col col-6 justify-content-center align-items-center">
+  <div  class="d-flex flex-column m-3 col col-6 justify-content-center align-items-left ">
+    <h3 class="mb-3 border-bottom">Formulario de Contacto</h3>
+<!-- Nombre -->
+      <div class="row g-3 mb-3 align-items-center">
+        <div class="col-auto col-sm-3">
+          <label for="inputName" class="col-form-label badge text-dark me-3 "> Nombre </label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="inputName" class="form-control"#contactName disabled value="{{cnombre}}">
+        </div>
+
+      </div>
+
+<!--       Email -->
+      <div class="row g-3 mb-3 align-items-center">
+        <div class="col-auto col-sm-3">
+          <label for="inputEmail" class="col-form-label badge text-dark me-3">Email </label>
+        </div>
+        <div class="col-auto ">
+          <input type="email" id="inputEmail" class="form-control" #contactEmail disabled value={{cemail}}>
+        </div>
+      </div>
+
+      <div class="row g-2 mb-3 align-items-center">
+        <div class="col-auto col-em-3">
+          <label for="inputMensaje" class="col-form-label badge text-dark me-3">Mensaje </label>
+        </div>
+        <div class="col-auto">
+          <textarea class="form-control" id="textareaMensaje" id="floatingTextarea2" style="height: 100px;width:210px;" #contactMensaje disabled value="{{cmensaje}}"></textarea>
+        </div>
+      </div>
+
+
+  </div>
+
+
